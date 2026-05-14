@@ -1,0 +1,9 @@
+# 安裝 nuxt 框架
+pnpm create nuxt myfirst
+
+# 安裝 Scalar 模組
+pnpm nuxi@latest module add @scalar/nuxt
+
+# 安裝 Zod 轉換工具
+pnpm install zod zod-to-openapi
+

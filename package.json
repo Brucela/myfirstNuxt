@@ -1,0 +1,20 @@
+{
+  "name": "myfirst",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@scalar/nuxt": "0.6.34",
+    "nuxt": "^4.4.5",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.6",
+    "zod": "^4.4.3",
+    "zod-to-openapi": "^0.2.1"
+  }
+}

@@ -7,3 +7,23 @@ pnpm nuxi@latest module add @scalar/nuxt
 # 安裝 Zod 轉換工具
 pnpm install zod zod-to-openapi
 
+# 建立server資料夾結構
+mkdir -p server/api/users
+mkdir -p server/controllers/user
+mkdir -p server/middleware
+mkdir -p server/services
+mkdir -p server/utils
+mkdir -p server/models
+mkdir -p server/schemas
+# 建立 API 路由
+touch server/api/users/[id].get.ts
+# 建立控制器
+touch server/controllers/user/user.controller.ts
+# 建立驗證中介軟體
+touch server/middleware/auth.ts
+
+# 建立 zod schema
+touch server/schemas/user.schema.ts
+
+# 前端呼叫 API 檢核
+# 後端驗證 API 輸入資料

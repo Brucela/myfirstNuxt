@@ -5,7 +5,7 @@ pnpm create nuxt myfirst
 pnpm nuxi@latest module add @scalar/nuxt
 
 # 安裝 Zod 轉換工具
-pnpm install zod zod-to-openapi
+pnpm add zod @asteasolutions/zod-to-openapi @scalar/api-reference
 
 # 建立server資料夾結構
 mkdir -p server/api/users
@@ -27,3 +27,6 @@ touch server/schemas/user.schema.ts
 
 # 前端呼叫 API 檢核
 # 後端驗證 API 輸入資料
+
+# 安裝 Scalar 模組
+pnpm add @scalar/nuxt

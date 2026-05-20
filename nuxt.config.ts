@@ -1,3 +1,4 @@
+import pkg from './package.json'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -15,5 +16,11 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['server/utils'],
+  },
+  // 將版本號注入到 runtimeConfig
+  runtimeConfig: {
+    public: {
+      appVersion: pkg.version
+    }
   },
 })

@@ -75,3 +75,9 @@ bun run preview
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 test
+
+# 1. 編譯專案（產生最新 .output）
+pnpm build
+
+# 2. 一鍵啟動 Docker
+pnpm docker:up

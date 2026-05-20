@@ -2,6 +2,7 @@
   "name": "myfirst",
   "type": "module",
   "private": true,
+  "version": "1.0.1",
   "scripts": {
     "generate:openapi": "tsx scripts/openapi/generator.ts",
     "dev": "nuxt dev --port 3005",
@@ -10,7 +11,8 @@
     "prebuild": "pnpm generate:openapi",
     "generate": "nuxt generate",
     "preview": "nuxt preview --port 3005",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "docker:up": "APP_VERSION=$npm_package_version docker-compose up -d --build"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "7.3.4",

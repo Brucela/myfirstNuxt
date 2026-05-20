@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nuxt-app:
+    image: my-nuxt-app:${APP_VERSION:-latest}
+    build: .
+    container_name: my-nuxt-ssr
+    ports:
+      - "80:3000"
+    volumes:
+      # 關鍵設定：將主機當前的 .output 資料夾掛載到容器內的 /app/.output
+      - ./.output:/app/.output
+    restart: always
+    environment:
+      - NODE_ENV=production

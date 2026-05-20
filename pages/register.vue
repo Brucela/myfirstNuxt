@@ -36,6 +36,9 @@ const handleSubmit = async () => {
     }
   }
 }
+
+const config = useRuntimeConfig()
+const version = config.public.appVersion // 這裡就會拿到 "1.2.3"
 </script>
 
 <template>
@@ -62,4 +65,5 @@ const handleSubmit = async () => {
 
     <p v-if="apiMessage" class="mt-4 text-green-600 font-bold">{{ apiMessage }}</p>
   </div>
+  <footer>目前版本：v{{ version }}</footer>
 </template>
